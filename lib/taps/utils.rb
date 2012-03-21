@@ -145,11 +145,11 @@ Data   : #{data}
 
   def order_by(db, table)
     pkey = primary_key(db, table)
-    if pkey
-      pkey.kind_of?(Array) ? pkey : [pkey.to_sym]
-    else
+    if pkey.empty?
       table = table.to_sym.identifier unless table.kind_of?(Sequel::SQL::Identifier)
       db[table].columns
+    else
+      pkey
     end
   end
 

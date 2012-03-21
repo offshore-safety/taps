@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency "rack",          ">= 1.4.0"
   gem.add_dependency "rest-client",   ">= 1.4.0", "< 1.7.0"
-  gem.add_dependency "sequel",        "~> 3.30.0"
+  gem.add_dependency "sequel",        "~> 3.32.0"
   gem.add_dependency "sinatra",       "~> 1.3.0"
   gem.add_dependency "sqlite3-ruby",  "~> 1.3"
 
